@@ -14,29 +14,53 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: flex-start; /* <-- Move content slightly up */
+      padding-top: 60px;
+      min-height: 100vh;
       text-align: center;
     }
     h1 {
       color: #FFA500;
       margin-bottom: 0.5em;
+      font-size: 2em;
     }
     p {
-      font-size: 1.2em;
+      font-size: 1.1em;
       max-width: 500px;
+      line-height: 1.5em;
+      margin-bottom: 20px;
     }
     .logo {
-      width: 400px;
-      margin-bottom: 20px;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 25px;
+    }
+    .email-button {
+      background-color: #FFA500;
+      color: #1a1a1a;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+    .email-button:hover {
+      background-color: #ffb733;
     }
   </style>
 </head>
 <body>
   <img src="/logo.png" alt="NextPhase Electric Logo" class="logo" />
   <h1>NextPhase Electric</h1>
-  <p>Professional. Modern. Reliable.<br />
-  Our full site is launching soon. In the meantime, reach out via email:<br />
-  <strong>info@nextphaseelectrical.com</strong></p>
+  <p>
+    Professional. Modern. Reliable.<br />
+    Our full site is launching soon.
+  </p>
+  <a href="mailto:info@nextphaseelectrical.com" class="email-button">
+    Email Us
+  </a>
 </body>
 </html>
