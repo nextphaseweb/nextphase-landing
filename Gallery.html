@@ -3,58 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects – NextPhase Electric</title>
+  <title>Gallery | NextPhase Electric</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: #1a1a1a;
+      background-color: #1a1a1a;
       color: #f5f5f5;
-      padding: 40px;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 20px;
+      background-color: #1a1a1a;
+      padding: 20px;
+      justify-content: center;
+      font-size: 1.1em;
+    }
+
+    .navbar a {
+      color: #FFA500;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ffb733;
+    }
+
+    .section {
+      padding: 40px 20px;
       text-align: center;
     }
 
-    h1 {
+    h2 {
       color: #FFA500;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
-    .gallery {
+    .disclaimer {
+      font-size: 0.9em;
+      color: #cccccc;
+      max-width: 900px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
       max-width: 1200px;
       margin: 0 auto;
     }
 
-    .gallery img {
+    .gallery-grid img {
       width: 100%;
-      height: auto;
       border-radius: 8px;
-      transition: transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
     }
 
-    .gallery img:hover {
+    .gallery-grid img:hover {
       transform: scale(1.03);
-    }
-
-    .back-link {
-      color: #FFA500;
-      text-decoration: none;
-      margin-top: 30px;
-      display: inline-block;
     }
   </style>
 </head>
+
 <body>
-  <h1>Project Gallery</h1>
-  <div class="gallery">
-    <img src="/images/project1.jpg" alt="Project 1">
-    <img src="/images/project2.jpg" alt="Project 2">
-    <img src="/images/project3.jpg" alt="Project 3">
-    <!-- Add more <img> elements as needed -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="mailto:nextphaseelectricil@gmail.com">Contact</a>
+  </nav>
+
+  <div class="section">
+    <h2>HVLS Fan Installations</h2>
+    <p class="disclaimer">
+      The following photos represent fan installation projects I was personally involved in prior to founding NextPhase Electric.
+      These jobs were completed while I was working as a subcontractor or employee for other licensed companies.<br><br>
+      Brands shown include <strong>Big Ass Fans®</strong> and <strong>VividAir®</strong>.
+      NextPhase Electric is not affiliated with or endorsed by any of these companies.
+    </p>
+    <div class="gallery-grid">
+      <img src="photos/fan1.jpg" alt="HVLS Fan 1" />
+      <img src="photos/fan2.jpg" alt="HVLS Fan 2" />
+      <img src="photos/fan3.jpg" alt="HVLS Fan 3" />
+      <!-- Add more fan images here -->
+    </div>
   </div>
+
+  <div class="section">
+    <h2>Lighting Projects</h2>
+    <p class="disclaimer">
+      The following photos represent lighting installation projects I was personally involved in prior to founding NextPhase Electric.
+      These jobs were completed while I was working as a subcontractor or employee for other licensed companies.
+    </p>
+    <div class="gallery-grid">
+      <img src="photos/light1.jpg" alt="Lighting 1" />
+      <img src="photos/light2.jpg" alt="Lighting 2" />
+      <img src="photos/light3.jpg" alt="Lighting 3" />
+      <!-- Add more lighting images here -->
+    </div>
+  </div>
+</body>
+</html>
+
   <a href="index.html" class="back-link">← Back to Home</a>
 </body>
 </html>
